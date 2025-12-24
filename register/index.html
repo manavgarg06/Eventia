@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Event details</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- fa fa-icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Favicons -->
+  <link rel = "icon" href = "../logo E.jpg" type = "image/x-icon">
+  <!-- <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <!-- <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" title=""></a> -->
+        <h1><a href="#main">E<span>VE</span>Ntia</a></h1>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="../homepage/index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#rules">Rules</a></li>
+          <li><a href="#supporters">Sponsors</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li id="btn1" class="buy-tickets"><a href="#RegisterOrMsg">Buy Tickets</a></li>
+          <li id="btn2" class="cancel-tickets"><a href="#RegisterOrMsg">Cancel Ticket</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container wow fadeIn">
+      <!-- Event name here -->
+      <h1 class="mb-4 pb-0"><span id="eventName"></span></h1>
+      <!-- Tagline -->
+      <p class="mb-4 pb-0" id="tagline"></p>
+      <a href="" id="Entertheroom" class="about-btn scrollto" style="display: none;">Enter the Room</a>
+    </div>
+    <!-- Countdown timer -->
+    <div class="countdown-container" style="display:none;">
+      <div class="countdown">
+        <div class="countdown-item">
+          <div class="countdown-value" id="days">00</div>
+          <div class="countdown-label">Days</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-value" id="hours">00</div>
+          <div class="countdown-label">Hours</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-value" id="minutes">00</div>
+          <div class="countdown-label">Minutes</div>
+        </div>
+        <div class="countdown-item">
+          <div class="countdown-value" id="seconds">00</div>
+          <div class="countdown-label">Seconds</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main id="main">
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>About The Event</h2>
+            <p id="description"></p>
+          </div>
+          <div class="col-lg-3">
+            <h3>Type</h3>
+            <!-- social, tech, sports -->
+            <p id="type"></p>
+          </div>
+          <div class="col-lg-3">
+            <h3>When</h3>
+            <p>Start time: </p>
+            <p id="Stime"></p>
+            <br>
+            <p>End time: </p>
+            <p id="Etime"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      Speakers Section
+    ============================-->
+    <section id="speakers" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Event Speakers</h2>
+          <p>Here are some of our speakers</p>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="speaker" style="text-align: center;">
+              <img id="EveImg" src="img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <!-- Event details -->
+                <h3><a href="speaker-details.html" id="eventCardName"></a></h3>
+                <p id="CardTag"></p>
+                <p id="CardType"></p>
+                <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  &nbsp;
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  &nbsp;
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  &nbsp;
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      RULE Section
+    ============================-->
+    <section id="rules" class="wow fadeInUp">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>RULES </h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <ul id="rule-list">
+
+              <!-- <li>
+                <a> Non consectetur a erat nam at lectus urna duis? <i class="fa fa-light fa-bullhorn"></i></a>
+              </li> -->
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--==========================
+      Sponsors Section
+    ============================-->
+    <section id="supporters" class="section-with-bg wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Sponsors</h2>
+        </div>
+
+        <div class="row no-gutters supporters-wrap clearfix">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/3.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/4.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/5.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/6.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/7.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/8.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--==========================
+      F.A.Q Section
+    ============================-->
+    <section id="faq" class="wow fadeInUp">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>F.A.Q </h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <ul id="faq-list">
+
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#faq1">How can I access the online event platform?
+                  <i class="fa fa-minus-circle"></i></a>
+                <div id="faq1" class="collapse" data-parent="#faq-list">
+                  <p>
+                    Once you have registered for the event, you will receive an email 
+                    with instructions and a unique link to access the online event platform.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <a data-toggle="collapse" href="#faq2" class="collapsed">What equipment or software do I need to join the online event?
+                  <i class="fa fa-minus-circle"></i></a>
+                <div id="faq2" class="collapse" data-parent="#faq-list">
+                  <p>
+                    To join the online event, you will need a stable internet connection and a device such as a computer, 
+                    laptop, or smartphone. Additionally, we recommend using the latest version of a web browser like Chrome, Firefox, or Safari
+                  </p>
+                </div>
+              </li>
+              <li>
+                <a data-toggle="collapse" href="#faq3" class="collapsed">Can I participate in the event from anywhere in the world?
+                   <i class="fa fa-minus-circle"></i></a>
+                <div id="faq3" class="collapse" data-parent="#faq-list">
+                  <p>
+                    Absolutely! Our online event is accessible globally, so you can participate from anywhere with an internet connection.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <a data-toggle="collapse" href="#faq4" class="collapsed">Can I ask questions or interact with the presenters during the event?
+                   <i class="fa fa-minus-circle"></i></a>
+                <div id="faq4" class="collapse" data-parent="#faq-list">
+                  <p>
+                    Yes, there will be interactive sessions and opportunities to ask questions during the event. 
+                    Details on how to participate and engage will be provided closer to the event date.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq5" class="collapsed">Will there be any technical support available during the event?
+                <i class="fa fa-minus-circle"></i></a>
+                <div id="faq5" class="collapse" data-parent="#faq-list">
+                  <p>
+                    Yes, we will have a dedicated technical support team available throughout the event. 
+                    They can assist you with any technical issues or questions you may have.
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    <!--==========================
+      Register Section
+    ============================-->
+    </section>
+
+    <div id="RegisterOrMsg" style="text-align: center; align-items: center; justify-content: center;">
+        <div class="card" style="text-align: center; align-items: center;">
+          <div id="register">
+            <img src="https://media.tenor.com/tKe_PFkn6mMAAAAC/clickhere-click.gif" alt="Card Image" style="max-height: 250px; max-width: 250px; justify-content: center;">
+            <br>Click! to register for the event<br>
+            <button id="regBTN" class="btn btn-outline-success" onclick="send()">Register</button>
+            <hr>
+          </div>
+          <div id="msg">
+            <br>You have succesfully Registered for this event<br>
+            <button id="canBTN" class="btn btn-outline-danger">Cancel Registeration</button>
+            <br>
+            <img src="https://i.pinimg.com/originals/8b/c8/25/8bc82544ef312c696b66dac6ea3c957d.gif" alt="Card Image" style="max-height: 250px; max-width: 250px; justify-content: center;">
+            <hr>
+          </div>
+        </div>
+    </div>
+
+    <!--==========================
+      Subscribe Section
+    ============================-->
+    <section id="subscribe">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Feedback</h2>
+          <p>Give us your valuable Feedback</p>
+        </div>
+        <form id="feedbacksubmit" method="POST" action="#">
+          <div class="form-row justify-content-center">
+            <div class="col-auto">
+              <input type="text" id="feedback" class="form-control" placeholder="Enter your Feedback">
+            </div>
+            <div class="col-auto">
+              <button type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="logo col-lg-3 col-md-6 footer-info">
+            <h1><a href="#intro">E<span>VE</span>NTIA</a></h1>
+            <!-- <img src="img/logo.png" alt="TheEvenet"> -->
+            <p>
+              Eventia an event hosting website,anyone who want's to host 
+              an event related like cultural,technical or any fest related to collage
+              university can host here . we provide best facilities to all our hosts
+            </p>
+          </div>
+
+          <!-- <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#ongoing_card">Ongoing Event</a></li>
+          <li><a href="#schedule">Event Schedule</a></li>
+          <li><a href="#supporters">Sponsors</a></li> -->
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="#intro">Home</a></li>
+              <li>
+                <i class="fa fa-angle-right"></i> <a href="#about">About us</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i> <a href="#speakers">Speaker</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i> <a href="#faq">F.A.Q</a>
+              </li>
+              <li>
+                <i class="fa fa-angle-right"></i> <a  href="#RegisterOrMsg">Register</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              IIITA <br />
+              Jhalwa, Allahabad<br />
+              India <br />
+              <strong>Phone:</strong>+91 93273 93406<br />
+              <strong>Email:</strong> Eventia@gmail.com<br />
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"
+                ><i class="fa fa-instagram"></i
+              ></a>
+              <a href="#" class="google-plus"
+                ><i class="fa fa-google-plus"></i
+              ></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script type="module" src="../firebase.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function send() {
+      
+
+    }
+  </script>
+  <script>
+    const isloginpage=false;
+    const ishomepage=false;
+    const isprofile=false;
+    const isRegister=true;
+    const isHost=false;
+    const PageForHost=false;
+    const isUpdateEvent=false;
+  </script>
+</body>
+</html>
