@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Profile Page</title>
+    <link rel = "icon" href = "../logo E.jpg" type = "image/x-icon">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar top -->
+    <div class="navbar-top">
+        <div class="title">
+            <h1>Profile</h1>
+        </div>
+        <!-- Navbar -->
+        <ul>
+            <!-- <li>
+                <a href="#message" class="social-icon">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#notification" class="social-icon">
+                    <i class="fa fa-thin fa-bell"></i>
+                </a>
+            </li> -->
+            <li>
+                <a id="ProfileLogout">
+                    <i class="fa fa-sign-out-alt fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+        <!-- End -->
+    </div>
+    <!-- End -->
+    <!-- Sidenav -->
+    <div class="sidenav">
+        <div class="profile">
+            <div class="profile-card__img">
+                <div class="profile-pic">
+                    <label class="-label" for="file">
+                        <span class="glyphicon glyphicon-camera"></span>
+                        <span>Change Image</span>
+                    </label>
+                    <input id="file" type="file" onchange="loadFile(event)" />
+                    <img src="noimage.png" id="output" width="200" />
+                </div>
+            </div>
+            <div id="nameFront" class="name">
+                parth garg
+            </div>
+            <div id="description" class="job">
+                Web Developer
+            </div>
+        </div>
+
+        <div class="sidenav-url">
+            <div class="url">
+                <a class="active">Profile</a>
+            </div>
+            <div class="url">
+                <a href="../homepage/index.html">Home</a>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+    <!-- Main -->
+    <div class="main">
+        <h2>IDENTITY</h2>
+        <div class="card">
+            <div class="card-body">
+                <a id="edit"><i style="color: grey;" id="edit_icon" class="fa fa-pen fa-xs edit"></i></a>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Name:</td>
+                            <td id="name"></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td id="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Phone:</td>
+                            <td id="phone"></td>
+                        </tr>
+                        <tr>
+                            <td>DOB:</td>
+                            <td id="dob"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a id="done_b" class="edit_done">Done</a>
+            </div>
+        </div>
+        <h2>EVENTS ATTENDED</h2>
+        <div class="past_event_body">
+            <div id="attended" class="container">
+                
+            </div>
+        </div>
+        <h2>HOSTED EVENTS</h2>
+        <div class="past_event_body">
+            <div id="hosted" class="container">
+                
+            </div>
+        </div>
+        <h2>SOCIAL MEDIA</h2>
+        <div class="card">
+            <div class="card-body">
+                <div class="social-media">
+                    <a href="https://www.facebook.com/profile.php?id=100005016812505" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/parth-garg-3a7a25234/" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-snapchat"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+    <script>
+        const isloginpage=false;
+        const ishomepage=false;
+        const isprofile=true;
+        const isRegister=false;
+        const isHost=false;
+        const PageForHost=false;
+        const isUpdateEvent=false;
+    </script>
+    <script type="module" src="../firebase.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
