@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta charset="utf-8" /> -->
+    <title>Eventia</title>
+    <link rel = "icon" href = "../logo E.jpg" type = "image/x-icon">
+    <!-- <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" /> -->
+
+    <!-- fa fa-icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Favicons -->
+    <!-- <link href="img/favicon.png" rel="icon" />
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" /> -->
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/venobox/venobox.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- swiper slider Stylesheet File -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+  </head>
+
+  <body>
+    <!--==========================
+    Header
+  ============================-->
+    <header id="header">
+      <div class="container">
+        <div id="logo" class="pull-left">
+          <!-- Uncomment below if you prefer to use a text logo -->
+          <h1><a href="#main">E<span>VE</span>Ntia</a></h1>
+          <!-- <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" title=""></a> -->
+        </div>
+        <nav id="nav-menu-container">
+          <ul class="notification-drop nav-menu">
+            <li class="menu-active"><a href="#intro">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#ongoing_card">Ongoing Event</a></li>
+            <li><a href="#schedule">Event Schedule</a></li>
+            <li><a href="#supporters">Sponsors</a></li>
+            <li><a href="../profilepage/">Profile</a></li>
+            <li><a id="logoutbtn" href="#">Logout</a></li>
+            <li class="buy-tickets"><a href="../event-host/">Host</a></li>
+            <li id="notification-icon" class="notification-drop">
+              <div class="icon" onclick="toggleNotifi()">
+                <img class="imgnotification" src="img/bell.png" alt="">
+                <span id="cnt"></span>
+              </div>
+              <div class="notifi-box" id="box">
+                <h2>Notifications <span id="cnt1"></span></h2>
+                
+              </div>
+            </li>
+          </ul>
+
+          <ul  >
+          </ul>
+
+        </nav>
+        <!-- #nav-menu-container -->
+      </div>
+    </header>
+    <!-- #header -->
+    <!--==========================
+    Intro Section
+  ============================-->
+    <section id="intro">
+      <div class="intro-container wow fadeIn">
+        <h1 class="mb-4 pb-0">Make Your<br /><span>Event</span> Memorable</h1>
+        <p class="mb-4 pb-0">
+          Welcome to Eventia
+        </p>
+        <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
+        data-autoplay="true"></a> -->
+        <a href="#ongoing_card" class="about-btn scrollto">About The Events</a>
+      </div>
+    </section>
+
+    <main id="main">
+      <!--==========================
+      About Section
+    ============================-->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <img src="../img/2489665.jpg" alt="" srcset="" width="400" height="300">
+            <div class="col-lg-6" style="margin-left: 50px;">
+              <h2>About The Team</h2>
+              <p>
+                Our event management website project team is a dedicated group of professionals with expertise in web 
+                development, UX/UI design, content creation, SEO, quality assurance, and project coordination. 
+                Together, we work passionately to create a seamless and engaging online platform for event planning and management.
+                 With a focus on delivering a user-friendly experience, 
+                 our team collaborates closely to ensure the website meets high-quality standards and exceeds the expectations of 
+                 our clients and users.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!--======================
+       Ongoing Section
+    ============================-->
+      <section id="ongoing_card" class="ongoing_card wow fadeInUp">
+        <div class="section-header">
+          <h2>Ongoing Events</h2>
+          <p>Here are some of our Ongoing Events</p>
+        </div>
+
+        <div class="swiper Swiper1">
+          <div class="swiper-wrapper" id="events-ongoing">
+            
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--==========================
+    Schedule Section
+    ============================-->
+      <section id="schedule" class="section-with-bg">
+        <div class="container wow fadeInUp">
+          <div class="section-header">
+            <h2>Event Schedule</h2>
+            <p>Here is our event schedule</p>
+          </div>
+
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="#d-1"
+                role="tab"
+                data-toggle="tab">
+                  Upcoming Event
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#d-2" role="tab" data-toggle="tab">Past Event</a>
+            </li>
+            <!-- <li class="nav-item">
+                        <a class="nav-link" href="#day-3" role="tab" data-toggle="tab">Day 3</a>
+                    </li> -->
+          </ul>
+
+          <div class="tab-content row justify-content-center">
+            <!-- Schdule Day 1 -->
+            <div
+              role="tabpanel"
+              class="col-lg-9 tab-pane fade show active"
+              id="d-1"
+            >
+
+              <!-- <a href="" id="loadMore">Load More</a> -->
+            </div>
+            <!-- End Schdule Day 1 -->
+
+            <!-- Schdule Day 2 -->
+            <div role="tabpanel" class="col-lg-9 tab-pane fade" id="d-2">
+
+            </div>
+          </div>
+          <a href="" id="loadMore">Load More</a>
+        </div>
+
+        <!-- <div class="row schedule-item">
+                            <div class="col-md-2"><time>12:00 AM</time></div>
+                            <div class="col-md-10">
+                                <div class="speaker">
+                                    <img src="img/speakers/3.jpg" alt="Cole Emmerich">
+                                </div>
+                                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+                            </div>
+                    </div>
+
+                    <div class="row schedule-item">
+                        <div class="col-md-2"><time>02:00 PM</time></div>
+                        <div class="col-md-10">
+                            <div class="speaker">
+                                <img src="img/speakers/4.jpg" alt="Jack Christiansen">
+                            </div>
+                            <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                            <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+                        </div>
+                    </div>
+
+                    <div class="row schedule-item">
+                        <div class="col-md-2"><time>03:00 PM</time></div>
+                        <div class="col-md-10">
+                            <div class="speaker">
+                                <img src="img/speakers/5.jpg" alt="Alejandrin Littel">
+                            </div>
+                            <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                            <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+                        </div>
+                    </div>
+
+                    <div class="row schedule-item">
+                        <div class="col-md-2"><time>04:00 PM</time></div>
+                        <div class="col-md-10">
+                            <div class="speaker">
+                                <img src="img/speakers/6.jpg" alt="Willow Trantow">
+                            </div>
+                            <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                            <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+                        </div>
+                    </div> -->
+
+        <!-- End Schdule Day 2 -->
+
+        <!-- Schdule Day 3 -->
+        <!-- <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
+
+                        <div class="row schedule-item">
+                            <div class="col-md-2"><time>10:00 AM</time></div>
+                            <div class="col-md-10">
+                                <div class="speaker">
+                                    <img src="img/speakers/2.jpg" alt="Hubert Hirthe">
+                                </div>
+                                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
+                                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
+                            </div>
+                        </div>
+
+                        <div class="row schedule-item">
+                            <div class="col-md-2"><time>11:00 AM</time></div>
+                            <div class="col-md-10">
+                                <div class="speaker">
+                                    <img src="img/speakers/3.jpg" alt="Cole Emmerich">
+                                </div>
+                                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+                            </div>
+                        </div>
+
+                        <div class="row schedule-item">
+                            <div class="col-md-2"><time>12:00 AM</time></div>
+                            <div class="col-md-10">
+                                <div class="speaker">
+                                    <img src="img/speakers/1.jpg" alt="Brenden Legros">
+                                </div>
+                                <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
+                                <p>Facere provident incidunt quos voluptas.</p>
+                            </div>
+                        </div>
+
+                        <div class="row schedule-item">
+                            <div class="col-md-2"><time>02:00 PM</time></div>
+                            <div class="col-md-10">
+                                <div class="speaker">
+                                    <img src="img/speakers/4.jpg" alt="Jack Christiansen">
+                                </div>
+                                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+                            </div>
+                        </div>
+
+                        <div class="row schedule-item">
+                            <div class="col-md-2"><time>03:00 PM</time></div>
+                            <div class="col-md-10">
+                                <div class="speaker">
+                                    <img src="img/speakers/5.jpg" alt="Alejandrin Littel">
+                                </div>
+                                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+                            </div>
+                        </div>
+
+                        <div class="row schedule-item">
+                            <div class="col-md-2"><time>04:00 PM</time></div>
+                            <div class="col-md-10">
+                                <div class="speaker">
+                                    <img src="img/speakers/6.jpg" alt="Willow Trantow">
+                                </div>
+                                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+                            </div>
+                        </div>
+
+                    </div> -->
+        <!-- End Schdule Day 2 -->
+      </section>
+
+      <!--==========================
+      Sponsors Section
+    ============================-->
+      <section id="supporters" class="section-with-bg wow fadeInUp">
+        <div class="container">
+          <div class="section-header">
+            <h2>Sponsors</h2>
+          </div>
+
+          <div class="row no-gutters supporters-wrap clearfix">
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="img/supporters/1.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="img/supporters/2.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="img/supporters/3.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="img/supporters/4.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="img/supporters/5.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="img/supporters/6.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="img/supporters/7.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="supporter-logo">
+                <img src="img/supporters/8.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==========================
+    Contact Section
+    ============================-->
+      <section id="contact" class="section-bg wow fadeInUp">
+        <div class="container">
+          <div class="section-header">
+            <h2>Contact Us</h2>
+            <p>To contact us fill the below from</p>
+          </div>
+
+          <div class="row contact-info">
+            <div class="col-md-4">
+              <div class="contact-address">
+                <i class="ion-ios-location-outline"></i>
+                <h3>Address</h3>
+                <address>IIITA, Jhalwa, India</address>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="contact-phone">
+                <i class="ion-ios-telephone-outline"></i>
+                <h3>Phone Number</h3>
+                <p><a href="tel:+91 93273 93406">+91 93273 93406</a></p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="contact-email">
+                <i class="ion-ios-email-outline"></i>
+                <h3>Email</h3>
+                <p><a href="mailto:Eventia@gmail.com">Eventia@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" class="feedback_web" method="post" role="form" class="contactForm">
+              <div class="form-row">
+                <div class="form-group col-md">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email_feed"
+                    placeholder="Your Email"
+                    data-rule="email"
+                    data-msg="Please enter a valid email"
+                  />
+                  <div class="validation"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="msg_feed"
+                  rows="5"
+                  data-rule="required"
+                  data-msg="Please write something for us"
+                  placeholder="Message"
+                ></textarea>
+                <div class="validation"></div>
+              </div>
+              <div class="text-center">
+                <button id="feed_submit" type="submit">Send Feedback</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- #contact -->
+    </main>
+
+    <!--==========================
+    Footer
+  ============================-->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="logo col-lg-3 col-md-6 footer-info">
+              <h1><a href="#intro">E<span>VE</span>NTIA</a></h1>
+              <!-- <img src="img/logo.png" alt="TheEvenet"> -->
+              <p>
+                Eventia an event hosting website,anyone who want's to host 
+                an event related like cultural,technical or any fest related to collage
+                university can host here . we provide best facilities to all our hosts 
+              </p>
+            </div>
+
+            <!-- <li class="menu-active"><a href="#intro">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#ongoing_card">Ongoing Event</a></li>
+            <li><a href="#schedule">Event Schedule</a></li>
+            <li><a href="#supporters">Sponsors</a></li> -->
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="fa fa-angle-right"></i> <a href="#intro">Home</a></li>
+                <li>
+                  <i class="fa fa-angle-right"></i> <a href="#about">About us</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i> <a href="#ongoing_card">Events</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+              <p>
+                IIITA <br />
+                Jhalwa, Allahabad<br />
+                India <br />
+                <strong>Phone:</strong>+91 93273 93406<br />
+                <strong>Email:</strong> Eventia@gmail.com<br />
+              </p>
+
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+                <a href="#" class="google-plus"
+                  ><i class="fa fa-google-plus"></i
+                ></a>
+                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- #footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/venobox/venobox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script>
+      const isloginpage=false;
+      const ishomepage=true;
+      const isprofile=false;
+      const isRegister=false;
+      const isHost=false;
+      const PageForHost=false;
+      const isUpdateEvent=false;
+    </script>
+    <script src="../firebase.js" type="module"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
